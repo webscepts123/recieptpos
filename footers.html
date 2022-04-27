@@ -1,0 +1,36 @@
+<div class="container">
+    <ul class="list-inline mb-7 text-center float-lg-right">
+        {include file="$template/includes/social-accounts.tpl"}
+
+        {if $languagechangeenabled && count($locales) > 1 || $currencies}
+            <li class="list-inline-item">
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalChooseLanguage">
+                    <div class="d-inline-block align-middle">
+                        <div class="iti-flag {if $activeLocale.countryCode === 'GB'}us{else}{$activeLocale.countryCode|lower}{/if}"></div>
+                    </div>
+                    {$activeLocale.localisedName}
+                    /
+                    {$activeCurrency.prefix}
+                    {$activeCurrency.code}
+                </button>
+            </li>
+        {/if}
+    </ul>
+
+    <ul class="nav justify-content-center justify-content-lg-start mb-7">
+        <li class="nav-item">
+            <a class="nav-link" href="{$WEB_ROOT}/contact.php">
+                {lang key='contactus'}
+            </a>
+        </li>
+        {if $acceptTOS}
+            <li class="nav-item">
+                <a class="nav-link" href="{$tosURL}" target="_blank">{lang key='ordertos'}</a>
+            </li>
+        {/if}
+    </ul>
+
+    <p class="copyright mb-0">
+        {lang key="copyrightFooterNotice" year=$date_year company=$companyname}
+    </p>
+</div>
