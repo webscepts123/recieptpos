@@ -15,11 +15,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/pricing.css">
+<link rel="stylesheet" href="assets/css/pointer.css">
 <link rel="stylesheet" href="assets/css/menu.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 </head>
 <body>
+  <div class='cursor' id="cursor"></div>
  <header>
     <div class="container">
         <div class="row">
@@ -64,6 +66,13 @@
 </section>
 
 <div id="generic_price_table">   
+  <div class="switch-wrapper">
+    <input id="monthly" type="radio" name="switch" checked>
+    <input id="yearly" type="radio" name="switch">
+    <label for="monthly">Monthly</label>
+    <label for="yearly">Yearly</label>
+    <span class="highlighter"></span>
+  </div>
   <section>
           <div class="container">
               <div class="row">
@@ -83,12 +92,12 @@
                           <div class="generic_head_price clearfix">
                           
                               <!--HEAD CONTENT START-->
-                              <div class="generic_head_content clearfix">
+                              <div class=" generic_head_content clearfix">
                               
                                 <!--HEAD START-->
                                   <div class="head_bg"></div>
                                   <div class="head">
-                                      <span>Monthly</span>
+                                      <span>Basic</span>
                                   </div>
                                   <!--//HEAD END-->
                                   
@@ -96,33 +105,36 @@
                               <!--//HEAD CONTENT END-->
                               
                               <!--PRICE START-->
-                              <div class="generic_price_tag clearfix">  
-                                  <span class="price">
-                                      <span class="sign">$</span>
-                                      <span class="currency">18</span>
-                                      <span class="cent">.18</span>
-                                      
-                                  </span>
-                                  <br>
-                                   <span class="price">
-                                      <span class="sign">LKR</span>
-                                      <span class="currency">6181</span>
-                                      <span class="cent">.23</span>
-                                      
-                                  </span>
-                              </div>
-                              <!--//PRICE END-->
+                              <div class="table-wrapper generic_price_tag clearfix">  
+                                <span class="price monthly">
+                                  <span class="sign">LKR</span>
+                                  <span class="currency">2000</span>
+                                </span>
+                                 <br>
+                                 <span class="price yearly hide">
+                                    <span class="sign">LKR</span>
+                                    <span class="currency">600</span>
+                                    <br>
+                                    <br>
+                                    <span class="billing-msg">billed annually</span>
+                                    
+                                </span>
+                                
+                            </div>
                               
-                          </div>                            
+                          </div>   
+                                             
                           <!--//HEAD PRICE DETAIL END-->
                           
                           <!--FEATURE LIST START-->
                           <div class="generic_feature_list">
                             <ul>
-                                <li><span>Unlimited</span> Warehouse</li>
-                                  <li><span>Unlimited</span> Storage</li>
-                                  <li><span>Unlimited</span> Clients And Workers</li>
-                                  <li><span>More</span> Functions</li>
+                                <li><span>1 Bussiness</span> Locations</li>
+                                  <li><span>2</span> Users</li>
+                                  <li><span>600</span> Products</li>
+                                  <li><span>Repair</span> Function</li>
+                                  <li><span>Woocommerce</span> Integrations</li>
+                                  <li><span>Support</span> Tickets</li>
                                   <li><span>24/7</span> Support</li>
                               </ul>
                           </div>
@@ -153,7 +165,7 @@
                                 <!--HEAD START-->
                                   <div class="head_bg"></div>
                                   <div class="head">
-                                      <span>Yearly</span>
+                                      <span>Pro Next</span>
                                   </div>
                                   <!--//HEAD END-->
                                   
@@ -161,20 +173,21 @@
                               <!--//HEAD CONTENT END-->
                               
                               <!--PRICE START-->
-                              <div class="generic_price_tag clearfix">  
-                                  <span class="price">
-                                      <span class="sign">$</span>
-                                      <span class="currency">75</span>
-                                      <span class="cent">.73</span>
-                                      <span class="month"></span>
+                              <div class="table-wrapper2 generic_price_tag clearfix">  
+                                  <span class="price2 monthly">
+                                    <span class="sign">LKR</span>
+                                    <span class="currency">5000</span>
                                   </span>
                                    <br>
-                                   <span class="price">
+                                   <span class="price2 yearly hide">
                                       <span class="sign">LKR</span>
-                                      <span class="currency">25748</span>
-                                      <span class="cent">.34</span>
+                                      <span class="currency">2500</span>
+                                      <br>
+                                      <br>
+                                      <span class="billing-msg">billed annually</span>
                                       
                                   </span>
+                                  
                               </div>
                               <!--//PRICE END-->
                               
@@ -184,11 +197,13 @@
                           <!--FEATURE LIST START-->
                           <div class="generic_feature_list">
                             <ul>
-                              <li><span>Unlimited</span> Warehouse</li>
-                                <li><span>Unlimited</span> Storage</li>
-                                <li><span>Unlimited</span> Clients And Workers</li>
-                                <li><span>More</span> Functions</li>
-                                <li><span>24/7</span> Support</li>
+                              <li><span>5 Bussiness</span> Locations</li>
+                              <li><span>10</span> Users</li>
+                              <li><span>2000</span> Products</li>
+                              <li><span>Repair</span> Function</li>
+                              <li><span>Woocommerce</span> Integrations</li>
+                              <li><span>Support</span> Tickets</li>
+                              <li><span>24/7</span> Support</li>
                             </ul>
                           </div>
                           <!--//FEATURE LIST END-->
@@ -217,7 +232,7 @@
                                 <!--HEAD START-->
                                   <div class="head_bg"></div>
                                   <div class="head">
-                                      <span>One Time</span>
+                                      <span>Ultimate Next</span>
                                   </div>
                                   <!--//HEAD END-->
                                   
@@ -225,18 +240,20 @@
                               <!--//HEAD CONTENT END-->
                               
                               <!--PRICE START-->
-                              <div class="generic_price_tag clearfix">  
-                                  <span class="price">
-                                      <span class="sign">$</span>
-                                      <span class="currency">1060</span>
-                                      <span class="cent">.28</span>
+                              <div class="table-wrapper3 generic_price_tag clearfix">  
+                                  <span class="price3 monthly">
+                                      <span class="sign">LKR</span>
+                                      <span class="currency">8000</span>
                                       
                                   </span>
                                    <br>
-                                   <span class="price">
+                                   <span class="price3 yearly hide">
                                       <span class="sign">LKR</span>
-                                      <span class="currency">360497</span>
-                                      <span class="cent">.11</span>
+                                      <span class="currency">3500</span>
+                                      <br>
+                                      <br>
+                                      
+                                      <span class="billing-msg">billed annually</span>
                                       
                                   </span>
                               </div>
@@ -246,13 +263,16 @@
                           <!--//HEAD PRICE DETAIL END-->
                           
                           <!--FEATURE LIST START-->
-                          <div class="generic_feature_list">
+                          <div class=" generic_feature_list">
                             <ul>
-                              <li><span>Unlimited</span> Warehouse</li>
-                                <li><span>Unlimited</span> Storage</li>
-                                <li><span>Unlimited</span> Clients And Workers</li>
-                                <li><span>More</span> Functions</li>
-                                <li><span>24/7</span> Support</li>
+                              <li><span>10 Bussiness</span> Locations</li>
+                              <li><span>30</span> Users</li>
+                              <li><span>5000</span> Products</li>
+                              <li><span>Repair</span> Function</li>
+                              <li><span>HRM</span> Function</li>
+                              <li><span>Woocommerce</span> Integrations</li>
+                              <li><span>Support</span> Tickets</li>
+                              <li><span>24/7</span> Support</li>
                             </ul>
                           </div>
                           <!--//FEATURE LIST END-->
@@ -277,227 +297,7 @@
 
 
 
- <h2 class="pricing">Receipt POS With HRM</h2>
-  <div id="generic_price_table">   
-    <section>
-            <div class="container">
-                <div class="row">
-                   
-                </div>
-            </div>
-            <div class="container">
-                
-                <!--BLOCK ROW START-->
-                <div class="row">
-                    <div class="col-md-4">
-                    
-                      <!--PRICE CONTENT START-->
-                        <div class="generic_content clearfix">
-                            
-                            <!--HEAD PRICE DETAIL START-->
-                            <div class="generic_head_price clearfix">
-                            
-                                <!--HEAD CONTENT START-->
-                                <div class="generic_head_content clearfix">
-                                
-                                  <!--HEAD START-->
-                                    <div class="head_bg"></div>
-                                    <div class="head">
-                                        <span>Monthly</span>
-                                    </div>
-                                    <!--//HEAD END-->
-                                    
-                                </div>
-                                <!--//HEAD CONTENT END-->
-                                
-                                <!--PRICE START-->
-                                <div class="generic_price_tag clearfix">  
-                                    <span class="price">
-                                        <span class="sign">$</span>
-                                        <span class="currency">25</span>
-                                        <span class="cent"></span>
-                                        
-                                    </span>
-                                     <br>
-                                      <span class="price">
-                                        <span class="sign">LKR</span>
-                                        <span class="currency">8500</span>
-                                        <span class="cent">.05</span>
-                                          
-                                      </span>
-                                </div>
-                                <!--//PRICE END-->
-                                
-                            </div>                            
-                            <!--//HEAD PRICE DETAIL END-->
-                            
-                            <!--FEATURE LIST START-->
-                            <div class="generic_feature_list">
-                              <ul>
-                                  <li><span>Unlimited</span> Warehouse</li>
-                                    <li><span>Unlimited</span> Storage</li>
-                                    <li><span>Unlimited</span> Clients And Workers</li>
-                                    <li><span></span> Mange Staff</li>
-                                    <li><span></span> Record Staff and Company Status</li>
-                                    <li><span>More</span> Functions</li>
-                                    <li><span>24/7</span> Support</li>
-                                </ul>
-                            </div>
-                            <!--//FEATURE LIST END-->
-                            
-                            <!--BUTTON START-->
-                            <div class="generic_price_btn clearfix">
-                              <a class="" href="https://billing.receiptspos.com/index.php?rp=/store/receipt-pos-with-hrm/monthly">Sign up</a>
-                            </div>
-                            <!--//BUTTON END-->
-                            
-                        </div>
-                        <!--//PRICE CONTENT END-->
-                            
-                    </div>
-                    
-                    <div class="col-md-4">
-                    
-                      <!--PRICE CONTENT START-->
-                        <div class="generic_content active clearfix">
-                            
-                            <!--HEAD PRICE DETAIL START-->
-                            <div class="generic_head_price clearfix">
-                            
-                                <!--HEAD CONTENT START-->
-                                <div class="generic_head_content clearfix">
-                                
-                                  <!--HEAD START-->
-                                    <div class="head_bg"></div>
-                                    <div class="head">
-                                        <span>Yearly</span>
-                                    </div>
-                                    <!--//HEAD END-->
-                                    
-                                </div>
-                                <!--//HEAD CONTENT END-->
-                                
-                                <!--PRICE START-->
-                                <div class="generic_price_tag clearfix">  
-                                    <span class="price">
-                                        <span class="sign">$</span>
-                                        <span class="currency">140</span>
-                                        <span class="cent"></span>
-                                        <span class="month"></span>
-                                    </span>
-                                     <br>
-                                      <span class="price">
-                                        <span class="sign">LKR</span>
-                                        <span class="currency">47600</span>
-                                        <span class="cent">.25</span>
-                                          
-                                      </span>
-                                </div>
-                                <!--//PRICE END-->
-                                
-                            </div>                            
-                            <!--//HEAD PRICE DETAIL END-->
-                            
-                            <!--FEATURE LIST START-->
-                            <div class="generic_feature_list">
-                              <ul>
-                                <li><span>Unlimited</span> Warehouse</li>
-                                  <li><span>Unlimited</span> Storage</li>
-                                  <li><span>Unlimited</span> Clients And Workers</li>
-                                  <li><span></span> Mange Staff</li>
-                                  <li><span></span> Record Staff and Company Status</li>
-                                  <li><span>More</span> Functions</li>
-                                  <li><span>24/7</span> Support</li>
-                              </ul>
-                            </div>
-                            <!--//FEATURE LIST END-->
-                            
-                            <!--BUTTON START-->
-                            <div class="generic_price_btn clearfix">
-                              <a class="" href="https://billing.receiptspos.com/index.php?rp=/store/receipt-pos-with-hrm/yearly">Sign up</a>
-                            </div>
-                            <!--//BUTTON END-->
-                            
-                        </div>
-                        <!--//PRICE CONTENT END-->
-                            
-                    </div>
-                    <div class="col-md-4">
-                    
-                      <!--PRICE CONTENT START-->
-                        <div class="generic_content clearfix">
-                            
-                            <!--HEAD PRICE DETAIL START-->
-                            <div class="generic_head_price clearfix">
-                            
-                                <!--HEAD CONTENT START-->
-                                <div class="generic_head_content clearfix">
-                                
-                                  <!--HEAD START-->
-                                    <div class="head_bg"></div>
-                                    <div class="head">
-                                        <span>One Time</span>
-                                    </div>
-                                    <!--//HEAD END-->
-                                    
-                                </div>
-                                <!--//HEAD CONTENT END-->
-                                
-                                <!--PRICE START-->
-                                <div class="generic_price_tag clearfix">  
-                                    <span class="price">
-                                        <span class="sign">$</span>
-                                        <span class="currency">1260</span>
-                                        <span class="cent"></span>
-                                        
-                                    </span>
-                                    <br>
-                                      <span class="price">
-                                        <span class="sign">LKR</span>
-                                        <span class="currency">428402</span>
-                                        <span class="cent">.27</span>
-                                          
-                                      </span>
-                                </div>
-                                <!--//PRICE END-->
-                                
-                            </div>                            
-                            <!--//HEAD PRICE DETAIL END-->
-                            
-                            <!--FEATURE LIST START-->
-                            <div class="generic_feature_list">
-                              <ul>
-                                <li><span>Unlimited</span> Warehouse</li>
-                                  <li><span>Unlimited</span> Storage</li>
-                                  <li><span>Unlimited</span> Clients And Workers</li>
-                              
-                                  <li><span>More</span> Functions</li>
-                                  <li><span></span> Mange Staff</li>
-                                  <li><span></span> Record Staff and Company Status</li>
-                                  <li><span>24/7</span> Support</li>
-                              </ul>
-                            </div>
-                            <!--//FEATURE LIST END-->
-                            
-                            <!--BUTTON START-->
-                            <div class="generic_price_btn clearfix">
-                              <a class="" href="https://billing.receiptspos.com/index.php?rp=/store/receipt-pos-with-hrm/onetime">Sign up</a>
-                            </div>
-                            <!--//BUTTON END-->
-                            
-                        </div>
-                        <!--//PRICE CONTENT END-->
-                            
-                    </div>
-                </div>  
-                <!--//BLOCK ROW END-->
-                
-            </div>
 
-            <p class="packp">Need a All in Solution POS  <a href="allpos.html"><span class="orangep">Check Out For Packages</span></a> </p>
-        </section>             
-     
-    </div>
      
       
  <footer class="footer">
@@ -565,6 +365,8 @@
     </ul>
     <!--social_footer_ul ends here-->
     </div>
+<script src="assets/js/pricingtoggle.js"></script>
+<script src="assets/js/pointer.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
